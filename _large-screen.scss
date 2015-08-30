@@ -1,0 +1,46 @@
+/*******************************************/
+/* The container for the single width tile */
+/* - Width and margin will change on       */
+/*   large-screen break.				   */
+/*******************************************/
+.singleTile{
+	@media #{$large-screen}{
+		width: $single-tile-width-large;
+		min-width: $single-tile-min-width;
+		margin: $single-tile-margin-large-pc;
+	}
+}
+
+// In the half content layout, need to scale single tile width/margin x2
+.singleTileHalfLayout{
+	@media #{$large-screen}{
+		width: $single-tile-width-large*2;
+		min-width: $single-tile-min-width;
+		margin: $single-tile-margin-large-pc*2;
+	}
+}
+
+/*******************************************/
+/* The container for the double width tile */
+/* - Width and margin will change on       */
+/*   large-screen break.				   */
+/*******************************************/
+.doubleTile{
+	@media #{$large-screen}{
+		width: $double-tile-width-large;
+		min-width: $double-tile-min-width-full;
+		margin: $double-tile-margin-large-pc;
+	}
+}
+
+
+/*******************************************/
+/* The container for the parent nav menu   */
+/* - Handles dynamic margin sizes: 		   */
+/*******************************************/
+.navBar, .headBar{
+	@media #{$large-screen}{
+		margin: $nav-margin-large-pc;
+		width: $nav-width-large;
+		}	
+}
